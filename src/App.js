@@ -72,7 +72,8 @@ class App extends Component {
 
     this.currency_factors = {
       'usd': 1.0,
-      'eur': 1.14
+      'eur': 0.88,
+      'brl': 3.83
     }
 
     this.state = {
@@ -215,6 +216,7 @@ class App extends Component {
                 <select className="form-control" value={this.state.currency} onChange={this.currencyChange}>
                     <option value="usd">$</option>
                     <option value="eur">€</option>
+                    <option value="brl">R$</option>
                 </select>
                 </span>
               </div>
